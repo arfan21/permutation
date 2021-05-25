@@ -7,14 +7,14 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestDynamic(t *testing.T) {
-	result := Dynamic(10, 2)
+func TestBruteForce(t *testing.T) {
+	result := BruteForce(10, 2)
 	fmt.Println(result)
 	assert.Equal(t, result, 90)
 }
 
-func BenchmarkDynamic(b *testing.B) {
+func BenchmarkBruteForce(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		Dynamic(10, 2)
+		BruteForce(10, 2)
 	}
 }
