@@ -12,7 +12,7 @@ func TestBruteForce(t *testing.T) {
 	fmt.Printf("Brute Force P(%d, %d)\n",n , r)
 	result := BruteForce(n, r)
 	fmt.Println("Result :",result)
-	assert.Equal(t, result, 90)
+	assert.Equal(t, result, expectedOutput)
 }
 
 func BenchmarkBruteForce(b *testing.B) {

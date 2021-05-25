@@ -11,7 +11,7 @@ func TestDynamic(t *testing.T) {
 	fmt.Printf("Dynamic P(%d, %d)\n",n , r)
 	result := Dynamic(n, r)
 	fmt.Println("Result :",result)
-	assert.Equal(t, result, 90)
+	assert.Equal(t, result, expectedOutput)
 }
 
 func BenchmarkDynamic(b *testing.B) {
