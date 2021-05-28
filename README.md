@@ -41,10 +41,18 @@ goos: linux
 goarch: amd64
 pkg: github.com/arfan21/permutation
 cpu: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
-BenchmarkBruteForce
-BenchmarkBruteForce-8           720393622                1.389 ns/op
-BenchmarkDynamic
-BenchmarkDynamic-8               1862026               649.3 ns/op
+BenchmarkBruteForceN10R2
+BenchmarkBruteForceN10R2-8      748677180                1.441 ns/op
+BenchmarkBruteForceN5R4
+BenchmarkBruteForceN5R4-8       391819078                2.776 ns/op
+BenchmarkBruteForceN20R10
+BenchmarkBruteForceN20R10-8     318623853                3.755 ns/op
+BenchmarkDynamicN10R2
+BenchmarkDynamicN10R2-8          1894484               692.1 ns/op
+BenchmarkDynamicN5R4
+BenchmarkDynamicN5R4-8           2467027               507.0 ns/op
+BenchmarkDynamicN20R10
+BenchmarkDynamicN20R10-8          493983              2819 ns/op
 PASS
-ok      github.com/arfan21/permutation  3.044s
+ok      github.com/arfan21/permutation  10.422s
 ```
