@@ -23,7 +23,19 @@ go test -v -bench=.
 ### Using Make
 
 ```sh
-make test
+make testAll
+```
+
+### Test Brute Force Only
+
+```sh
+make testBruteForce
+```
+
+### Test Dynamic Only
+
+```sh
+make testDynamic
 ```
 
 Output example:
