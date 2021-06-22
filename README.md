@@ -14,31 +14,52 @@ KELOMPOK :
 
 Pastikan sudah terinstall golang
 
-### Using Go
+#### Using Go
+
+-   Run
+
+    ```sh
+    go run main.go
+    ```
+
+-   Testing
+
+    ```sh
+    go test -v -bench=.
+    ```
+
+#### Using Make
+
+pastikan sudah terinstall make
+
+-   Run
+    ```sh
+    make run
+    ```
+-   Testing
+    -   Test All
+        ```sh
+        make testAll
+        ```
+    -   Test Brute Force
+        ```sh
+        make testBruteForce
+        ```
+    -   Test Dynamic
+        ```sh
+        make testDynamic
+        ```
+
+### Output example:
 
 ```sh
-go test -v -bench=.
+Masukkan angka untuk P(n,r). contoh : 8 2
+Input -> 5 4
+Hasil menggunakan Dynamic : 120
+Hasil menggunakan Brute Force : 120
 ```
 
-### Using Make
-
-```sh
-make testAll
-```
-
-### Test Brute Force Only
-
-```sh
-make testBruteForce
-```
-
-### Test Dynamic Only
-
-```sh
-make testDynamic
-```
-
-Output example:
+### Output Testing:
 
 ```sh
 === RUN   TestBruteForce

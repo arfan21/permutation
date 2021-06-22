@@ -6,3 +6,6 @@ testBruteForce:
 
 testDynamic:
 	go test constant.go dynamic.go  dynamic_test.go -v -bench=.
+
+run:
+	go run main.go
